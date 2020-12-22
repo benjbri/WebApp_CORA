@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>bfe97210-9616-4355-942b-a1fa9ee924e7</Id>
-  <Version>1.0.0.2</Version>
+  <Version>1.0.0.0</Version>
   <ProviderName>Denver International Airport</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Colorado Open Records Request (CORA)"/>
+  <DisplayName DefaultValue="Colorado Open Records Request CORA"/>
   <Description DefaultValue="Denver International Airport Colorado Open Record Requests or CORA add-in streamlines CORA request processing by allowing single-click submissions and responses."/>
-  <IconUrl DefaultValue="https://benjbri.github.io/WebApp_CORA/assets/icon-80.png"/>
-  <HighResolutionIconUrl DefaultValue="https://benjbri.github.io/WebApp_CORA/assets/icon-80.png"/>
+  <IconUrl DefaultValue="https://benjbri.github.io/WebApp_CORA/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://benjbri.github.io/WebApp_CORA/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
-    <AppDomain>https://benjbri.github.io</AppDomain>
+    <AppDomain>https://benjbri.github.io/WebApp_CORA</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -28,7 +28,7 @@
       </DesktopSettings>
     </Form>
   </FormSettings>
-  <Permissions>ReadWriteItem</Permissions>
+  <Permissions>ReadWriteMailbox</Permissions>
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
   </Rule>
@@ -94,13 +94,13 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://benjbri.github.io/WebApp_CORA/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GroupLabel" DefaultValue="CORA Addon"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Open Taskpane"/>
-        <bt:String id="ActionButton.Label" DefaultValue="Submit"/>
+        <bt:String id="GroupLabel" DefaultValue="CORA"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
+        <bt:String id="ActionButton.Label" DefaultValue="Quick Submit"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens Taskpane for submission review."/>
-        <bt:String id="ActionButton.Tooltip" DefaultValue="Quickly submits form without Taskpane."/>
+        <bt:String id="ActionButton.Tooltip" DefaultValue="Quickly submits form without taskpane."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
